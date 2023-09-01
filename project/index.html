@@ -3,22 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Hutao.jpeg"">
+    <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="home">Add Something</a>
-
-        <div class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Idk</a>
-            <a href="#">Add something</a>
+    <nav class="bg-gray-800 font-['Poppins']">
+        <div class="mx-auto max-w-7xl px-4 ">
+          <div class="relative flex h-16 items-center">
+            <div class="flex flex-1 items-center justify-between">
+              <div class="flex flex-shrink-0 items-center">
+                <img class="h-12 w-auto rounded-full" src="Hutao.jpeg" alt="Your Company">
+                <a href="#home" class="text-white rounded-md px-3 py-2 text-base font-medium">Napi.Dev</a>
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="#home" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+                  <a href="#profile" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium">Profile</a>
+                  <a href="#todo" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium">Smth</a>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
         </div>
-    </header>
+      </nav>
+    <main class="w-full bg-grey-800">
+      <p>testing</p>
+    </main>
+      
 </body>
 </html> 
