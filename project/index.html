@@ -4,28 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <script>
+      var typed = new Typed('element', {
+        strings: ["First sentence.", "Second sentence."],
+        typeSpeed: 30
+        });
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="Hutao.jpeg"">
+    <link rel="icon" type="image/x-icon" href="Hutao.jpeg">
+    
+    
+    
     <title>Document</title>
 </head>
-<body class="bg-gray-800 font-['Poppins']">
+<body class="bg-black text font-['Poppins']">
     <nav class="max-h-full">
         <div class="mx-auto max-w-7xl px-4">
           <div class="relative flex h-24 items-center">
             <div class="flex flex-1 items-center justify-between">
               <div class="flex flex-shrink-0 items-center">
                 <img class="h-12 w-auto rounded-full" src="Hutao.jpeg" alt="Your Company">
-                <a href="#home" class="text-white rounded-md px-3 py-2 text-base font-medium">Napi.Dev</a>
+                <a href="#home" class="text-white px-3 py-2 text-xl font-medium">Napi.Dev</a>
               </div>
               <div class="hidden sm:ml-6 sm:block">
-                <div class="flex space-x-4">
+                <div class="flex space-x-4 ">
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                  <a href="#home" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
-                  <a href="#profile" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium">Profile</a>
-                  <a href="#todo" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium">Smth</a>
+                  <a href="#home" class="text-white py-2 text-center relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" aria-current="page">Home</a>
+                  <a href="#profile" class="text-white px-20 py-2 text-center relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-16 after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Profile</a>
+                  <a href="#todo" class="text-white  py-2 text-center relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Smth</a>
                 </div>
               </div>
             </div>
@@ -36,14 +44,28 @@
 
       <main>
         <section>
-          <div class="w-screen mt-32 grid grid-cols-2 place-items-center gap-8 text-white">
-            <p>Hello,Welcome To my Website Portofolio</p>
+          <div class="w-screen mt-32 grid grid-cols-2 place-items-center gap-8 px-56 text-white ">
+            <p class="max-w-xl text-3xl text-white">Hello,My Name Muhamad Hanafi<br>And I'm<span id="element"></span>
+            </p>
             <img src="Hutao.jpeg" class="h-64"></img>
           </div>
         </section>
       </main>
 
-    
-      
+
+
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed('#element', {
+          strings: ["&nbsp;a Web Developer", "&nbsp;a FrontEnd"],
+          typeSpeed: 85,
+          backSpeed: 30,
+          backDelay: 2000,
+          cursorChar: '_',
+          
+          loop: true
+        });
+      </script>
+
 </body>
 </html> 
